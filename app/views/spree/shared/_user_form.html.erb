@@ -1,0 +1,71 @@
+<p>
+  <%= f.label :email, Spree.t(:email) %><br />
+  <%= f.email_field :email, :class => 'title' %>
+</p>
+<div id="password-credentials">
+  <p>
+    <%= f.label :password, Spree.t(:password) %><br />
+    <%= f.password_field :password, :class => 'title' %>
+  </p>
+
+  <p>
+    <%= f.label :password_confirmation, Spree.t(:confirm_password) %><br />
+    <%= f.password_field :password_confirmation, :class => 'title' %>
+  </p>
+<!-- There is a bug in Deface where we cant target the correct DIV.. So we have to overwrite this file. -->
+  <p>
+    <%= f.label :first_name, Spree.t(:first_name) %><br />
+    <%= f.text_field :first_name, :class => 'title' %>
+  </p>
+  <p>
+    <%= f.label :last_name, Spree.t(:last_name) %><br />
+    <%= f.text_field :last_name, :class => 'title' %>
+  </p>
+  <p>
+    <%= f.label :dob, Spree.t(:dob) %><br />
+    <%= f.date_field :dob, :class => 'title' %>
+  </p>
+  <p>
+    <%= f.label :phone_number, Spree.t(:phone_number) %><br />
+    <%= f.telephone_field :phone_number, :class => 'title' %>
+  </p>
+  <p>
+    <%= f.label :texting, Spree.t(:texting) %><br />
+    <%= f.check_box :texting, :class => 'title' %>
+  </p>
+  <p>
+    <%= f.label :ca_id, Spree.t(:ca_id) %><br />
+    <%= f.text_field :ca_id, :class => 'title' %>
+  </p>
+  <p>
+    <%= f.label :rec_id, Spree.t(:rec_id) %><br />
+    <%= f.text_field :rec_id, :class => 'title' %>
+  </p>
+  <p>
+    <%= f.label :rec_web, Spree.t(:rec_web) %><br />
+    <%= f.text_field :rec_web, :class => 'title' %>
+  </p>
+  <p>
+    <%= f.label :rec_phone, Spree.t(:rec_phone) %><br />
+    <%= f.text_field :rec_phone, :class => 'title' %>
+  </p>
+  <p>
+    <%= f.label :rec_issued, Spree.t(:rec_issued) %><br />
+    <%= f.date_field :rec_issued, :class => 'title' %>
+  </p>
+  <p>
+    <%= f.label :rec_exp, Spree.t(:rec_exp) %><br />
+    <%= f.date_field :rec_exp, :class => 'title' %>
+  </p>
+  <p>
+    <%= f.label :docname, Spree.t(:docname) %><br />
+    <%= f.text_field :docname, :class => 'title' %>
+  </p>
+  <p>
+    <%= f.label :doclic, Spree.t(:doclic) %><br />
+    <%= f.text_field :doclic, :class => 'title' %>
+  </p>
+
+</div>
+
+<div data-hook="signup_below_password_fields"></div>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="3085275437">
+    <data-source source="LOCAL" name="Rails ryan: development" uuid="a25deaa0-c6bc-42a5-9bc2-3a1d807037a9">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/ryan_development</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>df9bdfdbdfcbdfd0df98dfdddfd9dfd2</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails ryan: test" uuid="45702a77-de9c-44c6-b4c6-8414b4c8ec7b">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/ryan_test</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>df9bdfdbdfcbdfd0df98dfdddfd9dfd2</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails ryan: production" uuid="17257320-8bd1-4a35-b8e0-edd91544dd49">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/ryan_production</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>df9bdfdbdfcbdfd0df98dfdddfd9dfd2</user-password>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+
