@@ -45,3 +45,7 @@ gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git
 gem 'spree_fancy', :github => 'spree/spree_fancy'
 
 gem 'rails_12factor', group: :production
+
+group :production do
+  gem 'unicorn'
+end
