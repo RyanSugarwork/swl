@@ -17,9 +17,7 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  username: postgres
-  password: 1qaz2wsx
-  host: localhost
+
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
@@ -27,6 +25,9 @@ default: &default
 development:
   <<: *default
   database: ryan_development
+  username: postgres
+  password: 1qaz2wsx
+  host: localhost
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -61,7 +62,9 @@ development:
 test:
   <<: *default
   database: ryan_test
-
+  username: postgres
+  password: 1qaz2wsx
+  host: localhost
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
 # ever seen by anyone, they now have access to your database.
@@ -83,5 +86,5 @@ test:
 #
 production:
   <<: *default
-  database: ryan_production
+  url: <%= ENV['DATABASE_URL'] %>
 

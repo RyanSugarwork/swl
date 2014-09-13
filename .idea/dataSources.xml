@@ -20,8 +20,8 @@
     <data-source source="LOCAL" name="Rails ryan: production" uuid="17257320-8bd1-4a35-b8e0-edd91544dd49">
       <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://127.0.0.1/ryan_production</jdbc-url>
-      <user-name>postgres</user-name>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/ryan_deploy</jdbc-url>
+      <user-name>deploy</user-name>
       <user-password>df9bdfdbdfcbdfd0df98dfdddfd9dfd2</user-password>
       <libraries />
     </data-source>
