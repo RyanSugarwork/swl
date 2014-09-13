@@ -17,3 +17,9 @@ set :use_sudo, false
 
 default_run_options[:shell] = '/bin/bash --login'
 default_environment["RAILS_ENV"] = 'production'
+
+task :symlink_database_yml do
+  run "rm #{release_path}/config/database.yml"
+  run "ln -sfn #{shared_path}/config/database.yml #{release_path}/config/database.yml"
+end
+after "bundle:install", "symlink_database_yml"
