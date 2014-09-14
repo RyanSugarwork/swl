@@ -1,0 +1,7 @@
+en:
+  devise:
+      registrations:
+        user:
+          signed_up_but_not_approved: 'You have signed up successfully but all accounts must be approved by a Sugar Work Labs volunteer. You will be contacted shortly.'
+      failure:
+        not_approved: 'Your account has not been approved by Sugar Work Labs volunteers, please wait ~30 minutes after signing up to be contacted.'

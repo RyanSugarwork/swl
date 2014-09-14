@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140912193146) do
+ActiveRecord::Schema.define(version: 20140914002036) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -802,8 +802,8 @@ ActiveRecord::Schema.define(version: 20140912193146) do
     t.string   "persistence_token"
     t.string   "reset_password_token"
     t.string   "perishable_token"
-    t.integer  "sign_in_count",                      default: 0, null: false
-    t.integer  "failed_attempts",                    default: 0, null: false
+    t.integer  "sign_in_count",                      default: 0,     null: false
+    t.integer  "failed_attempts",                    default: 0,     null: false
     t.datetime "last_request_at"
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"
@@ -833,6 +833,7 @@ ActiveRecord::Schema.define(version: 20140912193146) do
     t.date     "rec_issued"
     t.date     "rec_exp"
     t.date     "dob"
+    t.boolean  "approved",                           default: false, null: false
   end
 
   add_index "spree_users", ["email"], name: "email_idx_unique", unique: true, using: :btree

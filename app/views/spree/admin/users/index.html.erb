@@ -24,7 +24,7 @@
   <% @users.each do |user|%>
       <tr id="<%= spree_dom_id user %>" data-hook="admin_users_index_rows" class="<%= cycle('odd', 'even')%>">
         <td class='user_email'><%=link_to user.email, edit_admin_user_url(user) %></td>
-        <td class='user_rec_exp'><%=link_to user.rec_exp, edit_admin_user_url(user) %></td>
+        <td class='user_rec_exp'><%= user.rec_exp %></td>
         <td data-hook="admin_users_index_row_actions" class="actions">
           <%= link_to_edit user, :no_text => true %>
           <%= link_to_delete user, :no_text => true %>
@@ -35,6 +35,32 @@
 </table>
 
 <%= paginate @users %>
+
+
+<h1>Users Awaiting Approval</h1>
+<table class="index" id="listing_users">
+  <tr data-hook="admin_users_index_headers">
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Actions</th>
+  </tr>
+  <% @users.each do |user| %>
+      <% if !user.approved? %>
+          <tr>
+            <td>
+              <%= user.first_name %>
+            </td>
+            <td>
+              <%= user.last_name %>
+            </td>
+            <td>
+              <%= link_to_edit user, :edit => true %>
+            </td>
+          </tr>
+      <% end %>
+  <% end %>
+</table>
+
 
 <% content_for :sidebar_title do %>
     <%= Spree.t(:search) %>
