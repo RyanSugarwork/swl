@@ -27,3 +27,4 @@ Spree::PermittedAttributes.user_attributes << :doclic
 Spree::PermittedAttributes.user_attributes << :rec_issued
 Spree::PermittedAttributes.user_attributes << :rec_exp
 Spree::PermittedAttributes.user_attributes << :dob
+Spree::PermittedAttributes.user_attributes << :approved
